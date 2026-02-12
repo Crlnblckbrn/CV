@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ 
+    <nav class="navbar">
+<p id="welcome-message"></p>
+<button onclick="logout()">Logout</button>
+    <div class="dashboard">Total Available: $<span id="nav-figure">1,000.00</span></div>
+</nav>
+
+<div class="container">
+    <div class="info-card">
+        <p>D: <strong>$<span id="day-start-display">1000.00</span></strong></p>
+        <h1 id="figure">1,000.00</h1>
+        <p class="label">Current Balance (Compounded)</p>
+    </div>
+    
+    <div class="actions">
+        <button id="increaseBtn">Boost by 10%</button>
+        <button id="resetBtn" class="secondary" disabled></button>
+    </div>
+    <div id="status-container">
+        <p id="status-text"></p>
+        <div id="timer-box" style="display:none;">
+            Next increase available in: <span id="countdown">00:00:00</span>
+        </div>
+    </div>
+</div>
+
+
+<script src="dashboard.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>
